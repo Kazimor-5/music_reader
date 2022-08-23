@@ -2,7 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 6rem;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100vh;
+  padding: 0 1.5rem;
+}
+.songContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -222,7 +222,7 @@ const Home: NextPage<{ songs: Song[] }> = ({ songs }) => {
 
   return (
     <main className={styles.container}>
-      <section>
+      <section className={styles.songContainer}>
         <Song song={songs[trackPlaying]} isPlaying={isPlaying} />
       </section>
       <Audio

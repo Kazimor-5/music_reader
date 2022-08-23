@@ -22,6 +22,10 @@ const Song = (props: { song: Song; isPlaying: boolean }) => {
           alt="Pochette d'album"
         />
       </article>
+      <article>
+        <h2 className={classes.title}>{props.song.title}</h2>
+        <p className={classes.artist}>{props.song.artist}</p>
+      </article>
     </>
   );
 };

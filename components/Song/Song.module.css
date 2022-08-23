@@ -15,3 +15,7 @@
 .notTurning {
   border-radius: 50%;
 }
+.title,
+.artist {
+  text-align: center;
+}
