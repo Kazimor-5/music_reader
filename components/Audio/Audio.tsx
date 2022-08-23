@@ -116,8 +116,8 @@ const Audio = (props: {
   };
 
   return (
-    <div>
-      <div className={classes.rangeInfos}>
+    <section className={classes.audioControlsContainer}>
+      <article className={classes.rangeInfos}>
         <p>{getTime(timeSongInfo.currentTime)}</p>
         <input
           type='range'
@@ -128,8 +128,8 @@ const Audio = (props: {
           onChange={handleDragging}
         />
         <p>{getTime(timeSongInfo.duration)}</p>
-      </div>
-      <div className={classes.controls}>
+      </article>
+      <article className={classes.controls}>
         <audio
           ref={audioRef}
           src={props.songs[props.trackPlaying].file}
@@ -161,8 +161,8 @@ const Audio = (props: {
           size={24}
           onClick={() => handlePreviousOrNextTrack('next')}
         />
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 

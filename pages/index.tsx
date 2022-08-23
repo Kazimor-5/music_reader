@@ -221,10 +221,10 @@ const Home: NextPage<{ songs: Song[] }> = ({ songs }) => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.songPlaying}>
+    <main className={styles.container}>
+      <section>
         <Song song={songs[trackPlaying]} isPlaying={isPlaying} />
-      </div>
+      </section>
       <Audio
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
@@ -232,7 +232,7 @@ const Home: NextPage<{ songs: Song[] }> = ({ songs }) => {
         trackPlaying={trackPlaying}
         setTrackPlaying={setTrackPlaying}
       />
-    </div>
+    </main>
   );
 };
 

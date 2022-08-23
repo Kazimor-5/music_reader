@@ -13,15 +13,15 @@ type Song = {
 const Song = (props: { song: Song; isPlaying: boolean }) => {
   return (
     <>
-      <div>
+      <article>
         <Image
           className={props.isPlaying ? classes.turning : classes.notTurning}
           src={props.song.image}
           width={300}
           height={300}
-          alt='Pochette de 445ème Nuit'
+          alt="Pochette d'album"
         />
-      </div>
+      </article>
     </>
   );
 };
