@@ -1,0 +1,17 @@
+@keyframes turning {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.turning {
+  animation: turning infinite linear 10s;
+  border-radius: 50%;
+}
+.notTurning {
+  border-radius: 50%;
+}
